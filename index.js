@@ -14,8 +14,7 @@ const clicked = () => {
   let c = input.value.split("").reverse().join("");
   const rearrangedString = c.slice(-1) + c.slice(0, -1);
   header.style.backgroundColor = rearrangedString;
-  // document.body.style.backgroundColor = input.value;
-    document.getElementById("color").style.backgroundColor = input.value;
+    document.getElementById("container").style.backgroundColor = input.value;
 
 
 };
@@ -29,14 +28,7 @@ const AnotherClick = () =>{
     header.style.backgroundColor = rearrangedString
     input.value = hex;
     // document.body.style.backgroundColor = hex;
-    document.getElementById("color").style.backgroundColor = hex;
+    document.getElementById("container").style.backgroundColor = hex;
   }
-window.onload(AnotherClick())  
-/* setInterval(() => {
-      let hex = getRandomColor();
-      header.style.color = hex;
-      header.innerHTML = hex;
-      let reversedHex = hex.split("").reverse().join("");
-      const rearrangedString = reversedHex.slice(-1) + reversedHex.slice(0, -1);
-      header.style.backgroundColor = rearrangedString;
-}, 2000); */
+AnotherClick()
+ 

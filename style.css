@@ -4,9 +4,9 @@
 }
  body {
   background:url('https://images.unsplash.com/photo-1461696114087-397271a7aedc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  color: #fcbe24;
-  padding: 0 24px;
-  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fcbe24; 
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -44,14 +44,28 @@ button{
 input::placeholder{
   font-weight: 700;
 }
-#color{
+#container{
   height: 40%;
   width: 40%;
   border-radius: 20px;
-  text-align: center;
+  /* text-align: center; */
   opacity: 0.5;
-
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  /* justify-content: center; */
+  gap: 10px;
 }
-#royalte, #royalte a{
+#royalties, #royalties a{
   color: beige;
+   font-size: 0.9em;
+}
+ button:hover{
+  background: coral;
+ }
+@media screen and (max-width: 750px) {
+    #container{
+      width: 90%;
+    }
 }
