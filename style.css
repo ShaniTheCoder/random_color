@@ -64,7 +64,7 @@ input::placeholder{
  button:hover{
   background: coral;
  }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1080px) {
     #container{
       width: 90%;
     }
